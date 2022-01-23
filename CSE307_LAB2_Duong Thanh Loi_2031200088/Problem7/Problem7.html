@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 7 HTML Form</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.form{
+			text-align: center;
+		}
+		h4{
+			border: 1px dotted #b1154a;
+		}
+
+		/*table{
+			margin-left: auto;
+			margin-right: auto;
+		}*/
+		.info{
+			margin-left: auto;
+			margin-right: auto;
+			width: 600px;
+		}
+		.update{
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="topic">
+		<h4>
+			<b>TÀI KHOẢN CỦA BẠN</b>
+		</h4>
+	</div>
+	<div class="form">
+		<button style="width: 200px" type="button">QUẢN LÝ TÀI KHOẢN</button>
+		<button style="width: 200px" type="button">QUẢN LÝ ĐƠN HÀNG</button>
+		<button style="width: 200px" type="button">THAY ĐỔI MẬT KHẨU</button>
+	</div>
+	<p class="note">
+		Bạn có thể cập nhật lại thông tin của mình tại các trường dưới dây. <br>
+		Lưu ý: Những trường có dấu"*"là bắt buộc
+	</p>
+	<div class="info">
+		<table>
+			<colgroup>
+				<col style="width: 300px">
+				<col style="width: 300px">
+			</colgroup>
+			<tr>
+				<td>
+					<label for="name">
+						<b>Họ và tên*</b>
+					</label>
+					<input type="text" name="name" id="name" placeholder="Nguyễn Văn A" required="" style="width: 80%">
+				</td>
+				<td>
+					<label for="birth">
+						<b>Ngày sinh</b>
+					</label>
+					<input type="text" name="birth" id="birth" placeholder="01/01/1970" style="width: 80%">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="town">
+						<b>Tỉnh - Thành phố*</b>
+					</label>
+					<input type="text" name="town" id="town" placeholder="TP. Hồ Chí Minh" required="" style="width: 80%">
+				</td>
+				<td>
+					<label for="company">
+						<b>Công ty</b>
+					</label>
+					<input type="text" name="company" id="company" placeholder="Công ty của bạn" style="width: 80%">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="district">
+						<b>Quận*</b>
+					</label>
+					<br>
+					<input type="text" name="district" id="district" placeholder="Quận 5" required="" style="width: 80%">
+				</td>
+				<td>
+					<label for="position">
+						<b>Công ty</b>
+					</label>
+					<input type="text" name="position" id="position" placeholder="Chức vụ tại công ty" style="width: 80%">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="address">
+						<b>Địa chỉ*</b>
+					</label>
+					<input type="text" name="address" id="address" placeholder="271/2 An Dương Vương, Phường 3, Quận 5, TP.Hồ Chí Minh" required="" style="width: 80%">
+				</td>
+				<td>
+					<label for="favorite-flower">
+						<b>Bạn thích Loại hoa</b>
+					</label>
+					<input type="text" name="favorite-flower" id="favorite-flower" placeholder="Hoa hồng, Hoa lan,..." style="width: 80%">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="phone">
+						<b>Số điện thoại*</b>
+					</label>
+					<input type="tel" name="phone" id="phone" placeholder="0973 xxx xxx" required="" style="width: 80%">
+				</td>
+				<td>
+					<label for="favorite-color">
+						<b>Bạn thích Màu hoa</b>
+					</label>
+					<input type="text" name="favorite-color" id="favorite-color" placeholder="Màu đỏ, Màu tím,..." style="width: 80%">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="email">
+						<b>Email*</b>
+					</label>
+					<input type="email" name="email" id="email" placeholder="nguyenvana@gmail.com" required="" style="width: 80%">
+				</td>
+				<td>
+					<label for="style-flower">
+						<b>Phong cách cắm hoa</b>
+					</label>
+					<input type="text" name="style-flower" id="style-flower" placeholder="Cổ Điển, Hiện đại, Đơn giản, Dễ thương,..." style="width: 80%">
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="update">
+		<button type="submit" style="width: 200px">
+			CẬP NHẬT THÔNG TIN
+		</button>
+	</div>
+</body>
+</html>

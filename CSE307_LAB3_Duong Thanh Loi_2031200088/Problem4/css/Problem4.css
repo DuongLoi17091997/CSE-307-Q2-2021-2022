@@ -1,0 +1,27 @@
+table {
+	background-color: #595959;
+}
+.doc {
+	height: 10px;
+	width: 10px;
+	display: inline-block;
+	background-color: green;
+	border-radius: 50%;
+}
+.id {
+	text-align: left;
+	color: gray;
+	font-size: 24px;
+}
+.info{
+	color: white;
+}
+.warning {
+	color: red;
+}
+.clearInfo {
+	color: lightgreen;
+}
+.note {
+	color: gray;
+}

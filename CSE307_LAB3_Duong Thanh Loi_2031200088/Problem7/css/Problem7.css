@@ -1,0 +1,62 @@
+hr {
+	border-top: 1px dashed black;
+	color: #757575;
+}
+.topic {
+	text-decoration: none;
+	color: #2C77B3;
+	font-weight: bold;
+}
+li a {
+	text-decoration: none;
+	color: black;
+}
+.new {
+	float: left;
+	width: 650px;
+	border: 1px solid black;
+	padding: 5px;
+	box-shadow: 2px 2px 2px #AAA;
+}
+.time {
+	font-size: 12px;
+	color: #757575;
+}
+.sport {
+	font-size: 14px;
+}
+.tittle {
+	height: 14px;
+	width: 5px;
+	display: inline-block;
+	background-color: red;
+}
+.advert {
+	float: right;
+	width: 500px;
+	border: 1px solid black;
+	padding: 5px;
+	box-shadow: 2px 2px 2px #AAA;
+}
+.tittleAdvert {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+img {
+	width: 14px;
+	border-radius: 10%;
+}
+.avatar {
+	width: 14px;
+	border-radius: 50%;
+}
+.name {
+	font-weight: bold;
+	font-size: 12px;
+	color: #12C4DE;
+}
+.timeandview {
+	color: #757575;
+	font-size: 12px
+}

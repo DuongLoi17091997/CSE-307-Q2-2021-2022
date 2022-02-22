@@ -1,0 +1,31 @@
+body {
+	background-color: #A9A9A9; 
+}
+h1 {
+	text-align: center;
+	color: #FAFAD2;
+	font-size: 40px;
+}
+li {
+	text-align: center;
+	color: #FFFFFF;
+}
+.item2 {
+	background-color: #D3D3D3;
+}
+.item4 {
+	text-decoration-style: solid;
+	text-decoration-line: underline;
+	text-decoration-color: #FFFFFF;
+}
+h3 {
+	color: #FAFAD2;
+	font-size: 40px;
+}
+.content {
+	font-size: 20px;
+}
+footer {
+	text-align: center;
+	font-weight: bold;
+}

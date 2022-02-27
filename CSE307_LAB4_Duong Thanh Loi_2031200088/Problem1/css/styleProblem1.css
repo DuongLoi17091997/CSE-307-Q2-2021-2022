@@ -1,0 +1,16 @@
+@font-face {
+	src:url(Font/EdwardianScriptITC.ttf);
+	font-family: Edwardian;
+}
+@font-face {
+	src:url(Font/ITCEDSCR.TTF);
+	font-family: Itcerscr;
+}
+p {
+	color: #0094ff;
+	font-family: Consolas;
+}
+span {
+	font-family: Edwardian;
+	font-size: 30px;
+}

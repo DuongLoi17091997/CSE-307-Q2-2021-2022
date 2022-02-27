@@ -1,0 +1,68 @@
+.introduction {
+    border: 2px solid;
+    padding: 10px;
+}
+ul {
+    padding: 0px;
+}
+ul .topic {
+    font-weight: bold;
+}
+
+
+.title button {
+    width: 100px;
+}
+.main {
+    border: 2px solid;
+    padding: 10px;
+}
+
+hr {
+    size: 10px;
+    border-top: 2px solid;
+}
+.main .subtittle {
+    color: #FFF;
+    background-color: #808080;
+    font-weight: bold;
+}
+.main a {
+    color: red;
+    text-decoration: underline;
+}
+
+
+.form-searching {
+    border: 2px solid;
+    text-align: center;
+}
+h5 {
+    background-color: #808080;
+    color: #FFF;
+}
+.form-searching button {
+    border-radius: 20%;
+}
+.form-searching a {
+    color: red;
+    text-decoration: underline;
+}
+.link {
+    border: 2px solid;
+    text-align: center;
+    margin-top: 5px;
+}
+.link a {
+    color: red;
+    text-decoration: underline;
+}
+.host {
+    border: 2px solid;
+    text-align: center;
+    margin-top: 5px;
+}
+.host a {
+    color: red;
+    text-decoration: underline;
+}

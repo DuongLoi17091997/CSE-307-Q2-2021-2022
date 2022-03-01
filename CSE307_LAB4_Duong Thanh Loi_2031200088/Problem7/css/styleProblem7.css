@@ -1,0 +1,13 @@
+i {
+	position: absolute;
+	padding: 10px;
+	text-align: center;
+}
+.searching {
+	width: 100px;
+	padding: 10px;
+	padding-left: 30px;
+}
+.searching:focus{
+	width: 300px;
+}

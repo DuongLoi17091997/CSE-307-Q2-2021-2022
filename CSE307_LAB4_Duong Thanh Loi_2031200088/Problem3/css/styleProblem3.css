@@ -1,0 +1,33 @@
+.border {
+	width: 450px;
+	padding: 10px 10px;
+	background-color: #EEEEEE;
+}
+.group {
+	border: 2px solid black;
+	padding: 10px 10px;
+	display: flex;
+	width: 400px;
+	margin-top: 50px;
+}
+.picture {
+	width: 50%;
+}
+.picture > img {
+	width: 200px;
+}
+.detail {
+	width: 50%;
+	margin-left: 20px;
+}
+.strong-detail {
+	font-weight: bold;
+}
+.control {
+	text-align: right;
+}
+
+button {
+	background-image: url(images/listen.png);
+	width: 70px;
+}

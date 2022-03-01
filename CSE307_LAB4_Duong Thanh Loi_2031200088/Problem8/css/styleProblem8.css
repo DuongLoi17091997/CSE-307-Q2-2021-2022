@@ -1,0 +1,75 @@
+.group-plan {
+    padding: 200px 200px;
+    background-color: #EEEBE4;
+}
+.type-choice {
+    overflow: hidden;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border: 2px solid #D6D3CD;
+    border-radius: 2%;
+    padding: 10px 10px;
+    background-color: #FFF;
+    transition: transform .2s;
+}
+.type-choice:hover {
+    transform: scale(1.5);
+    border: 5px solid #37BBE6;
+}
+.type-choice:hover .choice {
+    background-color: #37BBE6;
+}
+.tittle {
+    text-align: center;
+}
+.type {
+    font-size: 30px;
+    color: #36C5ED;
+    padding: 0px;
+    margin: 0px;
+}
+.price {
+    color: #FD935A;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+.duration, .content {
+    color: #B8AAC6;
+    padding: 0px;
+    margin: 0px;
+}
+hr {
+    width: 60%;
+    size: 5px;
+}
+.infor {
+    text-align: left;
+    margin-left: 60px;
+}
+.infor > p {
+    margin: 0px;
+}
+.number {
+    font-size: 30px;
+}
+.stored {
+    font-size: 25px;
+}
+.button-choice {
+    text-align: center;
+    padding: 10px 10px;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.choice{
+    height: 40px;
+    width: 200px;
+    background-color: #FD935C;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+}

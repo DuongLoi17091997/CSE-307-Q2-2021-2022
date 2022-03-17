@@ -1,0 +1,27 @@
+img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+.tittle {
+	border-top: 1px dashed;
+	border-bottom: 1px dashed;
+	border-left: 5px solid #672D91;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 20px;
+}
+.id-flower {
+	color: #672D91;
+	font-weight: bold;
+}
+.old-price {
+	color: #989C99;
+	text-decoration-line: line-through;
+	font-size: 16px;
+}
+.new-price {
+	font-weight: bold;
+	font-size: 24px;
+	color: red;
+}

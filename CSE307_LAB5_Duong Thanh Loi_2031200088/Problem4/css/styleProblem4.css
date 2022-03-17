@@ -1,0 +1,260 @@
+.top-hearder {
+	background-color: #2D3E50;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 12px;
+}
+.top-hearder a {
+	color: #fff;
+	font-weight: bold;
+}
+.top-hearder .fa {
+	margin-right: 10px;
+}
+.top-hearder .login {
+	margin-right: 10px;
+}
+.top-hearder .sign-in {
+	margin-left: : 10px;
+}
+img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+.mid-hearder .container .row {
+	align-items: center;
+}
+.mid-hearder .input-group-text {
+	background: none;
+}
+.mid-hearder .form-control {
+	border-right: none;
+}
+.mid-hearder .media .media-body p {
+	margin-bottom: 0px;
+}
+.mid-hearder .media {
+	max-width: 220px;
+	margin-left: auto;
+	margin-right: 0;
+}
+.shoppingCart {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border-radius:50%;
+	background-color: #E83D2B;
+	text-align: center; 
+	line-height: 60px;
+}
+.shoppingCart i {
+	color: #fff;
+	font-size: 24px;
+}
+.bottom-hearader li a {
+	display: inline-block;
+	color: #fff;
+	padding: 10px 5px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+}
+.bottom-hearader .deskMenu {
+	background-color: #642E8F;
+	color: #fff;
+}
+.bottom-hearader .menu {
+	text-align: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.bottom-hearader .menu li {
+	display: inline-block;
+	position: relative;
+	padding-left: 10px;
+}
+.bottom-hearader .submenu a {
+	display: inline-block;
+	width: 200px;
+	color: blue;
+	text-decoration: none;
+	padding: 10px 30px;
+}
+.bottom-hearader .submenu {
+	display: none;
+	position: absolute;
+	z-index: 99;
+	background-color: #fff;
+	box-shadow: 10px 11px 49px -10px rgba(0,0,0,0.75);
+	left: 0;
+	top: 61px;
+	padding: 0;
+	list-style: none;
+	min-width: 200px;
+	text-align: left;
+}
+.bottom-hearader .submenu li {
+	padding: 0;
+}
+.bottom-hearader .menu > li:hover .submenu {
+	display: block;
+}
+.bottom-hearader .menu > li:hover > a {
+	background-color: #763BA6;
+}
+.bottom-hearader .submenu > li:hover > a {
+	background-color: #642E8F;
+	color: #fff;
+}
+
+/*Silde discount*/
+.silde-event {
+	margin-top: 30px;
+}
+.transport {
+	max-width: 100%;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	font-size: 20px;
+	background-color: #26A59A;
+	color: #fff;
+}
+.transport i {
+	color: #fff;
+    font-size: 80px;
+}
+.discount{
+	max-width: 100%;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	font-size: 20px;
+	padding-top: 50px;
+	margin-top: 30px;
+	color: #fff;
+	background-color: #808E42;
+}
+/*main-body*/
+
+main .tittle {
+	border-top: 1px dashed;
+	border-bottom: 1px dashed;
+	border-left: 5px solid #672D91;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 20px;
+}
+main .id-flower {
+	color: #672D91;
+	font-weight: bold;
+}
+main .old-price {
+	color: #989C99;
+	text-decoration-line: line-through;
+	font-size: 16px;
+}
+main .new-price {
+	font-weight: bold;
+	font-size: 24px;
+	color: red;
+}
+
+/*footer*/
+footer .top-footer i {
+    color: #fff;
+    font-size: 45px;
+}
+footer .icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: #672D91;
+    text-align: center; 
+    line-height: 95px;
+}
+footer .top-footer h5 {
+    color: #672D91;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+footer .top-footer hr {
+    height: 2px;
+    background-color: #672D91;
+}
+footer .top-footer .row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .mid-footer {
+    margin-top: 100px;
+}
+
+footer .mid-footer hr {
+    height: 3px;
+    width: 50px;
+    background-color: #672D91;
+    margin: 0;
+}
+footer .mid-footer a {
+    color: #636E7A;
+    text-decoration: none;
+}
+footer .mid-footer ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+footer .mid-footer i {
+    margin-left: 5px;
+}
+
+footer .bottom-footer {
+    background-color: #2C3E50;
+    color: #fff;
+    text-align: center;
+}
+footer .bottom-footer i {
+    margin-right: 10px;
+}
+
+/*Mobile seaction css*/
+@media (max-width: 767.98px) {
+	.mid-hearder {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.mid-hearder {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.searchForm {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.mid-hearder .media {
+		max-width: 220px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.mobileMenu {
+		background-color: #642E8F;
+		color: #fff;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.mobileMenu .buttonMenu {
+		color: #fff;
+		border:1px solid #fff;
+		text-align: center;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}

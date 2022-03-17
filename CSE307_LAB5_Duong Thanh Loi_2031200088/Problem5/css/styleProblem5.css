@@ -1,0 +1,60 @@
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border: 1px solid gray;
+}
+.group-product {
+    text-align: center;
+}
+.group-product .number-phone {
+    color: red;
+    font-weight: bold;
+}
+.group-product .product:hover img{
+    border: 2px solid orange;
+    box-shadow: 10px 11px 49px -10px rgba(0,0,0,0.75);
+}
+.group-product .product .buy{
+    display: none;
+    color: #fff;
+    position: absolute;
+    border: 2px solid #ff8c00;
+    background-color: #ff8c00;
+    text-align: center;
+    left: 70px;
+    top: 150px;
+    width: 450px;
+    height: auto;
+    font-size: 40px;
+    font-weight: bold;
+}
+.group-product .product .detail {
+    display: none;
+    color: #fff;
+    position: absolute;
+    border: 2px solid #ff8c00;
+    background-color: #ff8c00;
+    text-align: center;
+    left: 70px;
+    top: 250px;
+    width: 450px;
+    height: auto;
+    font-size: 40px;
+    font-weight: bold;
+}
+.group-product .product:hover .buy, .group-product .product:hover .detail {
+    display: block;
+    text-decoration: none;
+}
+.tittle {
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.tittle h5 {
+    display: inline-block;
+    border-bottom: 5px solid #ff8c00;
+    margin: 0;
+}

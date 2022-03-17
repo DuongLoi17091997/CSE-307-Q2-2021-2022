@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 4</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		let arrObs = [
+			{
+				"pName" : "apple",
+				"pPrice" : "5000"
+			},
+			{
+				"pName" : "banana",
+				"pPrice" : "2000"
+			},
+			{
+				"pName" : "orange",
+				"pPrice" : "4000"
+			},
+		];
+
+		function compare (arrObs1, arrObs2){
+			if (arrObs1.pPrice > arrObs2.pPrice) return 1;
+			if (arrObs1.pPrice < arrObs2.pPrice) return -1;
+			return 0;
+		}
+
+		arrObs.sort(compare);
+		console.log(arrObs);
+	</script>
+</body>
+</html>

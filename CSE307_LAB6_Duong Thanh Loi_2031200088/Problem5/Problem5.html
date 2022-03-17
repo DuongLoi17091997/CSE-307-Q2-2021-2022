@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem5</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		img {
+			max-width: 100%;
+			width: 10%;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<h2>Search by Name</h2>
+	<div id = "search-item">
+		
+	</div>
+	<button id = searchByName>Search</button>
+	<button id = removeByID>Delete</button>
+	
+	<div id = "ProductGroup">
+		
+	</div>
+	
+	<script type="text/javascript">
+		let arrObs = [
+			{
+				"idProduct" : "001",
+				"nameProduct" : "apple5678",
+				"quanityProduct" : "10",
+				"priceProduct" : "2000",
+				"imageProduct" : "https://www.applesfromny.com/wp-content/uploads/2020/06/SnapdragonNEW.png"
+			},
+			{
+				"idProduct" : "002",
+				"nameProduct" : "banana",
+				"quanityProduct" : "20",
+				"priceProduct" : "4000",
+				"imageProduct" : "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg"
+			},
+			{
+				"idProduct" : "003",
+				"nameProduct" : "orange",
+				"quanityProduct" : "50",
+				"priceProduct" : "5000",
+				"imageProduct" : "https://dictionary.cambridge.org/vi/images/thumb/orange_noun_002_25738.jpg?version=5.0.225"
+			}
+		];
+		arrObs.unshift(
+		{
+			"idProduct" : "004",
+			"nameProduct" : "durian",
+			"quanityProduct" : "500",
+			"priceProduct" : "50000",
+			"imageProduct" : "https://dictionary.cambridge.org/vi/images/thumb/durian_noun_002_11820.jpg?version=5.0.225"
+		});
+		arrObs.push(
+		{
+			"idProduct" : "005",
+			"nameProduct" : "cherry",
+			"quanityProduct" : "800",
+			"priceProduct" : "150000",
+			"imageProduct" : "https://newfreshfoods.com.vn/datafiles/3/2018-02-27/16100957742431_e0a70f72bdae9885bfc32d7cd19a26a1_XL.jpg"
+		});
+
+		let str = "";
+		for (var i = 0; i< arrObs.length; i++){
+			str += `
+				<p><b>Name</b>: ${arrObs[i].idProduct}</p>
+				<p><b>Name</b>: ${arrObs[i].nameProduct}</p>
+				<p><b>Name</b>: ${arrObs[i].quanityProduct}</p>
+				<p><b>Price</b>: ${arrObs[i].priceProduct}</p>
+				<img src="${arrObs[i].imageProduct}">
+			`;
+		}
+		document.getElementById("ProductGroup").innerHTML = str;
+
+		function compare (arrObs1, arrObs2){
+			if (arrObs1.nameProduct > arrObs2.nameProduct) return 1;
+			if (arrObs1.nameProduct < arrObs2.nameProduct) return -1;
+			return 0;
+		}
+
+		arrObs.sort(compare);
+		console.log(arrObs);
+
+		function search (str){
+			for (var i = arrObs.length - 1; i >= 0; i--) {
+				if(arrObs[i].nameProduct.indexOf(str)!== -1){
+					str += `
+					<p><b>Name</b>: ${arrObs[i].idProduct}</p>
+					<p><b>Name</b>: ${arrObs[i].nameProduct}</p>
+					<p><b>Name</b>: ${arrObs[i].quanityProduct}</p>
+					<p><b>Price</b>: ${arrObs[i].priceProduct}</p>
+					<img src="${arrObs[i].imageProduct}">
+					`;
+					return str;
+				}
+			}
+		}
+		document.querySelector("#searchByName").addEventListener('click', function(){
+				document.getElementById("search-item").innerHTML = search('apple');
+		}, false);
+
+		function removeByID (id){
+			for (var i = arrObs.length - 1; i >= 0; i--){
+				if(arrObs[i].idProduct == id){
+					arrObs.splice(i, 1);
+				}
+			}
+		}
+		document.querySelector("#removeByID").addEventListener('click', function(){
+				removeByID('004');
+				console.log(arrObs);
+		}, false);
+	</script>
+</body>
+</html>

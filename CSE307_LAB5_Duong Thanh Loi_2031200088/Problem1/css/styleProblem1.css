@@ -1,0 +1,147 @@
+.top-hearder {
+	background-color: #2D3E50;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 12px;
+}
+.top-hearder a {
+	color: #fff;
+	font-weight: bold;
+}
+.top-hearder .fa {
+	margin-right: 10px;
+}
+.top-hearder .login {
+	margin-right: 10px;
+}
+.top-hearder .sign-in {
+	margin-left: : 10px;
+}
+img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+.mid-hearder .container .row {
+	align-items: center;
+}
+.mid-hearder .input-group-text {
+	background: none;
+}
+.mid-hearder .form-control {
+	border-right: none;
+}
+.mid-hearder .media .media-body p {
+	margin-bottom: 0px;
+}
+.mid-hearder .media {
+	max-width: 220px;
+	margin-left: auto;
+	margin-right: 0;
+}
+.shoppingCart {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border-radius:50%;
+	background-color: #E83D2B;
+	text-align: center; 
+	line-height: 60px;
+}
+.shoppingCart i {
+	color: #fff;
+	font-size: 24px;
+}
+.bottom-hearader li a {
+	display: inline-block;
+	color: #fff;
+	padding: 10px 5px;
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.bottom-hearader .deskMenu {
+	background-color: #642E8F;
+	color: #fff;
+}
+.bottom-hearader .menu {
+	text-align: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.bottom-hearader .menu li {
+	display: inline-block;
+	position: relative;
+	padding-left: 10px;
+}
+.bottom-hearader .submenu a {
+	display: inline-block;
+	width: 200px;
+	color: blue;
+	text-decoration: none;
+	padding: 10px 30px;
+}
+.bottom-hearader .submenu {
+	display: none;
+	position: absolute;
+	z-index: 99;
+	background-color: #fff;
+	box-shadow: 10px 11px 49px -10px rgba(0,0,0,0.75);
+	left: 0;
+	top: 62px;
+	padding: 0;
+	list-style: none;
+	min-width: 200px;
+	text-align: left;
+}
+.bottom-hearader .submenu li {
+	padding: 0;
+}
+.bottom-hearader .menu > li:hover .submenu {
+	display: block;
+}
+.bottom-hearader .menu > li:hover > a {
+	background-color: #763BA6;
+}
+.bottom-hearader .submenu > li:hover > a {
+	background-color: #642E8F;
+	color: #fff;
+}
+
+/*Mobile seaction css*/
+@media (max-width: 767.98px) {
+	.mid-hearder {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.mid-hearder {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.searchForm {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.mid-hearder .media {
+		max-width: 220px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.mobileMenu {
+		background-color: #642E8F;
+		color: #fff;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.mobileMenu .buttonMenu {
+		color: #fff;
+		border:1px solid #fff;
+		text-align: center;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}

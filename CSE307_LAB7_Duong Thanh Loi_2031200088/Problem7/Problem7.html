@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem7</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.danger-nofi, .success-nofi, .infor-nofi, .warning-nofi {
+			display: none;
+			position: fixed;
+			z-index: 1;
+			padding-top: 100px;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgb(0,0,0);
+			background-color: rgba(0,0,0,0.4);
+		}
+		.danger-content {
+			background-color: #f66359;
+			color: #fff;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px;
+			width: 30%;
+			border: 1px solid #000;
+		}
+		.success-content{
+			background-color: #6bbd6e;
+			color: #fff;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px;
+			width: 30%;
+			border: 1px solid #000;
+		}
+		.infor-content{
+			background-color: #47a8f5;
+			color: #fff;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px;
+			width: 30%;
+			border: 1px solid #000;
+		}
+		.warning-content{
+			background-color: #ffaa2c;
+			color: #fff;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px;
+			width: 30%;
+			border: 1px solid #000;
+		}
+		.close {
+			color: #fff;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+			padding-top: 10px;
+		}
+
+		.close:hover, .close:focus {
+			color: #000;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<button class="danger">Danger</button>
+	<button class="success">Success</button>
+	<button class="infor">Infor</button>
+	<button class="warning">Warning</button>
+	<div class="danger-nofi">
+		<div class="danger-content">
+			<span class="close close-danger">&times;</span>
+			<p>Danger ! Indicates a dangerous or pontentially negative action.</p>
+		</div>
+	</div>
+	<div class="success-nofi">
+		<div class="success-content">
+			<span class="close close-success">&times;</span>
+			<p>Success! Indicates a successful or positive action.</p>
+		</div>
+	</div>
+	<div class="infor-nofi">
+		<div class="infor-content">
+			<span class="close close-infor">&times;</span>
+			<p>Info! Indicates a neutral informative change or action.</p>
+		</div>
+	</div>
+	<div class="warning-nofi">
+		<div class="warning-content">
+			<span class="close close-warning">&times;</span>
+			<p>Warinnig! Indicates a warning that might need attention.</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		let btnDanger = document.querySelector(".danger");
+		let dangerNofi = document.querySelector(".danger-nofi");
+		btnDanger.addEventListener("click", function(){
+			dangerNofi.style.display = 'block';
+		},);
+		let closeDanger = document.querySelector(".close-danger");
+		closeDanger.addEventListener("click", function(){
+			dangerNofi.style.display = 'none';
+		},);
+
+		let btnSuccess = document.querySelector(".success");
+		let successNofi = document.querySelector(".success-nofi");
+		btnSuccess.addEventListener("click", function(){
+			successNofi.style.display = 'block';
+		},);
+		let closeSuccess = document.querySelector(".close-success");
+		closeSuccess.addEventListener("click", function(){
+			successNofi.style.display = 'none';
+		},);
+
+		let btnInfor = document.querySelector(".infor");
+		let inforNofi = document.querySelector(".infor-nofi");
+		btnInfor.addEventListener("click", function(){
+			inforNofi.style.display = 'block';
+		},);
+		let closeInfor = document.querySelector(".close-infor");
+		closeInfor.addEventListener("click", function(){
+			inforNofi.style.display = 'none';
+		},);
+
+		let btnWarning = document.querySelector(".warning");
+		let warningNofi = document.querySelector(".warning-nofi");
+		btnWarning.addEventListener("click", function(){
+			warningNofi.style.display = 'block';
+		},);
+		let closeWarning = document.querySelector(".close-warning");
+		closeWarning.addEventListener("click", function(){
+			warningNofi.style.display = 'none';
+		},);
+	</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 3</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.js-bar {
+			border: 1px solid #000;
+			box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.75);
+			padding-bottom: 20px;
+			padding-left: 50px;
+		}
+		#backgroud {
+			position: relative;
+			background-color: #ccc;
+			width: 400px;
+			height: 40px;
+		}
+		#progressing {
+			position: absolute;
+			background-color: green;
+			height: 40px;
+			color: #fff;
+			text-align: center;
+			top: 0;
+			left: 0;
+			width: 0%;
+		}
+		#clickMe {
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="js-bar">
+		<h1>JavaScript Progress Bar</h1>
+		<div id="backgroud">
+			<div id="progressing">
+				<p id = loading>0%</p>
+			</div>
+		</div>
+		<button id = "clickMe">Click Me</button>
+	</div>
+
+	<script type="text/javascript">
+		let timer, percent = 0;
+		let element = document.querySelector('#progressing');
+		document.querySelector('#clickMe').addEventListener('click', function(){
+				timer = setInterval(Loop, 100);
+		}, false);
+
+		function Loop() {
+			if(percent == 100){
+				clearInterval(timer);
+			} else {
+				percent++;
+				element.style.width = percent+"%";
+				document.querySelector('#loading').innerHTML = percent + '%';
+			}
+		}
+	</script>
+</body>
+</html>

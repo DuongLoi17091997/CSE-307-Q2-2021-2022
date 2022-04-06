@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+	<title>Problem1</title>
+</head>
+<body>
+	<p>Date: <input type="text" id="datepicker"></p>
+	<script>
+		$( function() {
+			$( "#datepicker" ).datepicker({
+				dateFormat: "dd-mm-yy"
+			});
+		} );
+  	</script>
+</body>
+</html>

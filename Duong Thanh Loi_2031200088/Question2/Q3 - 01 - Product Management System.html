@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Product Management System</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script type="text/javascript" src="jquery/jquery-3.5.1.min.js"></script>
+
+        <style type="text/css">
+            header {
+                text-align: center;
+                background-color: #111;
+                color: #fff;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 20px;
+            }
+            img {
+                max-width: 100%;
+                width: 50%;
+            }
+            tbody .Del {
+                border: 1px solid #000;
+                cursor: pointer;
+                padding: 10px 10px;
+            }
+            .left-side {
+                background-color: #eee;
+                padding-top: 15px;
+            }
+            .BrandList li { cursor: pointer; }
+
+            main { padding: 10px; }
+            .card-header {
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+            .Title, label { font-weight: bold; }
+            .NewProduct {
+                margin-bottom: 40px;
+                padding-bottom: 20px;
+            }
+            #Submit {
+                padding-left: 20px;
+                padding-right: 20px;
+            }            
+            .GroupElements { padding: 0px 10px; }
+            .group-List img {
+                max-width: 100px;
+                height: auto;
+            }
+            
+            .group-List .row { margin-top: 20px; }
+            footer {
+                padding: 20px 0px;  
+                background: #111;
+                text-align: center;
+                font-weight: bold;
+                color: #fff;
+            }
+        </style>        
+    </head>
+
+    <body>
+        <header>
+            PRODUCT MANAGEMENT SYSTEM              
+        </header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2 left-side">
+                    <h2>Brand List</h2>
+                    <ul id="BrandGroup"></ul>
+                </div>
+
+                <div class="col-10">
+                    <main class="main-content"> 
+                        <section class="NewProduct">                 
+                            <div class="card-header">
+                                Add a new product
+                            </div>                                
+
+                            <div class="GroupElements">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Product Name</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Price</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="Price">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Quantity</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="Quantity">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Image Link</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Description</label>
+                                            <div class="col-sm-10">
+                                                <textarea class="form-control" rows="3" id="Description"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Brand</label>
+                                            <div class="col-sm-10">
+                                                <select class="form-control">
+                                                	<option value="Brand 1">Brand 1</option>
+                                                	<option value="Brand 2">Brand 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="offset-md-1 col-sm-11">
+                                        <button type="button" class="btn btn-primary" id="Add" >Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- End of the form section -->
+
+                        <section class="group-Title">
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h3 class="student-list">PRODUCT LIST</h3>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" class="form-control" placeholder="Product Name">
+                                    </div>
+                                    <div class="col-1">
+                                        <button class="form-control" type="button">Search</button>
+                                    </div>
+                                </div>                        
+                            </div>
+                        </section>
+                        <!-- End of the product title group -->
+
+                        
+                    	<table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Image</th>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quanity</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Function</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>    
+                    </main>
+                </div>
+            </div>
+        </div>
+        <footer>
+            Product Management System - 2022
+        </footer> 
+        <script type="text/javascript">
+            $(document).ready(function(){
+                let brandList, productList;
+                $.post(
+                    "http://45.76.156.126/getProducts.php",
+                    {
+                        GetProducts : "All"
+                    },
+                    function(data){
+                        productList = data;
+                        // console.log(data);
+                        productList.sort(compare);
+                        showProductList(productList);
+                    },
+                    "json"
+                );
+                $.post(
+                    "http://45.76.156.126/getProducts.php",
+                    {
+                        GetProducts : "Brand"
+                    },
+                    function(data){
+                        brandList = data;
+                        let str = "";
+                        for (let i = 0; i < brandList.length; i++) {
+                            str +=`<li class="item">${brandList[i]}</li>`;
+                        }
+                        $("#BrandGroup").append(str);
+                    },
+                    "json"
+                );
+                function compare(p1 , p2) {
+                    if (p1.Quantity > p2.Quantity) return -1;
+                    if (p1.Quantity < p2.Quantity) return 1;
+                    return 0;
+                }
+                function showProductList(productList){
+                    let str = "";
+                    for (let i = 0; i < productList.length; i++) {
+                        str += `<tr>
+                                    <th scope="col">${i+1}</th>
+                                    <td>
+                                        <img src="${productList[i].Image_URL}">
+                                    </td>
+                                    <td>${productList[i].Name}</td>
+                                    <td>${productList[i].Price}</td>
+                                    <td>${productList[i].Quantity}</td>
+                                    <td>${productList[i].Description}</td>
+                                    <td>
+                                        <span class="Del" data-ID="${productList[i].ID}">Del</span>
+                                    </td>
+                                </tr>`;
+                    }
+                    $("tbody").html("");
+                    $("tbody").append(str);
+                };
+                $("#Add").click(function(){
+                    let _Name = $("#Name").val();
+                    let _Price = $("#Price").val();
+                    let _Quantity = $("#Quantity").val();
+                    let _Image = $("#Image").val();
+                    let _Description = $("#Description").val();
+                    productList.push(
+                        {
+                            "ID" : productList.length+1,
+                            "Name" : _Name,
+                            "Price" : _Price,
+                            "Quantity" : _Quantity,
+                            "Image_URL" : _Image,
+                            "Description" : _Description
+                        }
+
+                    );
+                    $("#Name").val("");
+                    $("#Price").val("");
+                    $("#Quantity").val("");
+                    $("#Image").val("");
+                    $("#Description").val("");
+                    showProductList(productList);
+                });
+                $("tbody").on("click", ".Del", function(){
+                    let _confirm = confirm("Are you sure?");
+                    if (_confirm) {
+                        let _ID = $(this).attr("data-ID");
+                        for (let i = 0; i < studentList.length; i++) {
+                            if(productList[i].ID == _ID){
+                                productList.splice(i, 1);
+                                break;
+                            }
+                        }
+                        showStudentList(productList);
+                    }
+                });
+                $("#BrandGroup").on("click", ".item", function(){
+                    let _value = $(this).html();
+                    let str = "";
+                    let orderNumber = 1;
+                    for (let i = 0; i < productList.length; i++) {
+                        if (productList[i].Brand == _value) {
+                            str += `<tr>
+                                    <th scope="col">${i+1}</th>
+                                    <td>
+                                        <img src="${productList[i].Image_URL}">
+                                    </td>
+                                    <td>${productList[i].Name}</td>
+                                    <td>${productList[i].Price}</td>
+                                    <td>${productList[i].Quantity}</td>
+                                    <td>${productList[i].Description}</td>
+                                    <td>
+                                        <span class="Del" data-ID="${productList[i].ID}">Del</span>
+                                    </td>
+                                </tr>`;
+                        }
+                    }
+                    $("tbody").html("");
+                    $("tbody").append(str);
+                });
+
+            });
+        </script> 
+    </body>
+</html> 

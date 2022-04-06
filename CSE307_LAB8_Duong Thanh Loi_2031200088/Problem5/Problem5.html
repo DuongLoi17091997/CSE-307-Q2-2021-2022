@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 5</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.sidenav {
+			height: 100%;
+			width: 250px;
+			display: none;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			overflow-x: hidden;
+			padding-top: 60px;
+		}
+
+		.sidenav a {
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 25px;
+			color: #818181;
+			display: block;
+		}
+		.buttonNav {
+			cursor: pointer;
+		}
+
+		.sidenav a:hover {
+			color: #f1f1f1;
+		}
+
+		.sidenav .closebtn {
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 36px;
+			margin-left: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="sidenav">
+		<a href="javascript:void(0)" class="closebtn">&times;</a>
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="#">Clients</a>
+		<a href="#">Contact</a>
+	</div>
+
+	<span class="buttonNav">&#9776; open</span>
+	<script type="text/javascript">
+		let open = document.querySelector(".buttonNav");
+        let close = document.querySelector(".closebtn");
+        let sideNav = document.querySelector(".sidenav");
+        open.addEventListener("click", function(){
+            sideNav.style.display = 'block';
+        },);
+        close.addEventListener("click", function(){
+            sideNav.style.display = 'none';
+        },);
+	</script>
+</body>
+</html>
